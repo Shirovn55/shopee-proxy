@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: shopee-proxy
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
